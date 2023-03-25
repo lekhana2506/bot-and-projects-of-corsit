@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bots And Projects</title>
+    <link rel="stylesheet" href="style.css">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.robot h3 {
+			text-align: center;
+			color: rgb(178, 178, 178);
+			transition: color 0.3s ease-in-out;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: rgb(60, 64, 72);
+		}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.logo img {
+			width: 110px;
+			top: 20px;
+		}
+
+		h1 {
+			font-size: 3rem;
+			line-height: 1.4px;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+			color: rgb(178, 178, 178);
+			transition: color 0.3s ease-in-out;
+		}
+
+		.robot-gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			grid-gap: 20px;
+			margin: 20px;
+		}
+
+		.robot img {
+			width: 95%;
+			height: 80%;
+            padding-bottom: 5px;
+            border-radius: 10px;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.robot:hover h3 {
+			color: white;
+		}
+
+		img:hover {
+			transform: scale(1.1);
+		}
+
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.robot {
+			animation: fadeInUp 0.5s ease-in-out;
+			animation-fill-mode: both;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        
+        <div class="header-text">
+            <h1>Bots And Projects</h1>
+        </div>
+    </header>
+    <main>
+        <div class="robot-gallery">
+            <div class="robot">
+                <img src="lfr.jpeg" alt="Line Following Bot">
+				<h3> Line following Bot</h3>
+            </div>
+			<div class="robot">
+                <img src="Obs.jpeg" alt="Obstacle Avoiding Bot">
+				<h3> Table Top Bot</h3>
+            </div>
+            <div class="robot">
+                <img src="Obstacle Avoiding-Robot-using-Arduino-and-Ultrasonic-Sensor.jpg" alt="Obstacle Avoiding Bot">
+				<h3> Obstacle Avoiding Bot</h3>
+            </div>
+            <div class="robot">
+                <img src="bluetooth.jpg" alt="bluetooth Bot">
+				<h3> Bluetooth Control Bot</h3>
+            </div>
+            <div class="robot">
+                <img src="pro5.jpeg" alt="Robot 4">
+				<h3> Gesture Control Bot </h3>
+            </div>
+			<div class="robot">
+                <img src="pro8.jpeg" alt="Robot 4">
+				<h3>Rugged Race Bot</h3>
+            </div>
+			<div class="robot">
+                <img src="Mq5_circuit.jpg" alt="Robot 4">
+				<h3>  Gas Leakage Detection</h3>
+            </div>
+			<div class="robot">
+                <img src="Telegram-Controlled-Home-Automation-using-NodeMCU-ESP8266.jpg" alt="Robot 4">
+				<h3> Home Automation</h3>
+            </div>
+			<div class="robot">
+                <img src="pro3.jpeg" alt="Robot 4">
+				<h3> Object Detector </h3>
+            </div>
+			<div class="robot">
+                <img src="pro4.jpeg" alt="Robot 4">
+				<h3> Smart Irrigation System</h3>
+            </div>
+			<div class="robot">
+                <img src="pro9.jpeg" alt="Robot 4">
+				<h3> Wireless Surveillance Camera</h3>
+            </div>
+			<div class="robot">
+                <img src="pro7.jpeg" alt="Robot 4">
+				<h3>Air Quality Tracker </h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
